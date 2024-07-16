@@ -1,0 +1,105 @@
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.trapezoid-circle-cont{
+    border-bottom: 150px solid red;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 400px;
+    transform: rotate(180deg);
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    top: 50vh;
+}
+
+.rectangle{
+    width: 30px;
+	height: 30vh;
+    background: white;
+    border: 2px black solid;
+    position: absolute;
+    top: 20vh;
+}
+
+.rectangle::before{
+    content: "";
+    width: 0;
+	height: 0;
+    border-right: 80px solid blue;
+    border-bottom: 4vh solid transparent;
+    position: absolute;
+    right: 30px;
+}
+
+.rectangle__small-flag-two{
+    content: "";
+    width: 0;
+	height: 0;
+    border-right: 80px solid blue;
+    border-top: 4vh solid transparent;
+    position: absolute;
+    right: 30px;
+}
+
+.rectangle__big-black-flag::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 11vh solid transparent;
+    border-right: 250px solid blue;
+    border-bottom: 12vh solid transparent;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+.rectangle::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 28vh solid blue;
+    border-right: 300px solid transparent;
+    position: absolute;
+    left: 30px;
+}
+
+
+.trapezoid-circle{
+    width: 100px;
+	height: 100px;
+	border-radius: 50px;
+    background: white;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 25px;
+}
+
+.trapezoid-circle::after{
+    content: "";
+    width: 100px;
+	height: 100px;
+	border-radius: 50px;
+    background: white;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 125px;
+}
+
+.trapezoid-circle::before{
+    content: "";
+    width: 100px;
+	height: 100px;
+	border-radius: 50px;
+    background: white;
+    transform: rotate(180deg);
+    position: absolute;
+    left: -125px;
+}
+
